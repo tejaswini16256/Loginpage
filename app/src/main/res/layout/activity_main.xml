@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pink_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#f0737b"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="16dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="78dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:text="SOS"
+            android:elevation="8dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+
+            android:id="@+id/text3"
+            android:layout_width="275dp"
+            android:layout_height="83dp"
+            android:layout_margin="80dp"
+            android:elevation="8dp"
+
+            android:text="In case of emergency, keep telling family members to contact family"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/pink_card"
+            app:layout_constraintStart_toStartOf="@+id/pink_card"
+            app:layout_constraintEnd_toStartOf="@+id/img1"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="207dp"
+            android:layout_marginTop="13dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="90dp"
+            android:elevation="8dp"
+            android:src="@drawable/doremon"
+            app:layout_constraintEnd_toEndOf="@+id/pink_card"
+            app:layout_constraintTop_toBottomOf="@+id/pink_card"
+
+
+            app:layout_constraintTop_toTopOf="@+id/pink_card" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#63d2c8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/pink_card"
+
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="225dp" >
+
+        <TextView
+
+            android:id="@+id/text4"
+            android:layout_width="275dp"
+            android:layout_height="83dp"
+            android:layout_margin="80dp"
+            android:layout_marginTop="68dp"
+
+            android:elevation="8dp"
+            android:text="In case of emergency, keep telling family members to contact family"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:text="GUARD"
+        android:elevation="8dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/green_card"
+        app:layout_constraintTop_toTopOf="@+id/green_card"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="207dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="90dp"
+        android:elevation="8dp"
+        android:src="@drawable/chhotabhim"
+        app:layout_constraintEnd_toEndOf="@+id/green_card"
+        app:layout_constraintTop_toBottomOf="@+id/green_card"
+
+
+        app:layout_constraintTop_toTopOf="@+id/green_card" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
